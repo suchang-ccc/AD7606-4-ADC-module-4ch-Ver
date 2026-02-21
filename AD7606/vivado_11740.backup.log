@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu Dec 11 19:50:02 2025
+# Process ID         : 11740
+# Current directory  : D:/Programs/FPGA/ZYNQ/AD7606
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent26672 D:\Programs\FPGA\ZYNQ\AD7606\AD7606.xpr
+# Log file           : D:/Programs/FPGA/ZYNQ/AD7606/vivado.log
+# Journal file       : D:/Programs/FPGA/ZYNQ/AD7606\vivado.jou
+# Running On         : CCC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13500H
+# CPU Frequency      : 3187 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16802 MB
+# Swap memory        : 7516 MB
+# Total Virtual      : 24318 MB
+# Available Virtual  : 8321 MB
+#-----------------------------------------------------------
+start_gui
+open_project D:/Programs/FPGA/ZYNQ/AD7606/AD7606.xpr
+ERROR: [Project 1-4421] No val for DA Elab Attr 'Dmv'
+ERROR: [Runs 36-378] The checkpoint 'D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/utils_1/imports/synth_1/ad7606_drive.dcp' was created with 'Vivado v2025.1 (64-bit)', and cannot be opened in this version.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec 11 19:53:05 2025...

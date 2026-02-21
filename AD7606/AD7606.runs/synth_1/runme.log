@@ -1,0 +1,297 @@
+
+*** Running vivado
+    with args -log ad7606_drive.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ad7606_drive.tcl
+
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Fri Dec 12 10:42:49 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source ad7606_drive.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 483.793 ; gain = 211.836
+Command: read_checkpoint -auto_incremental -incremental D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/utils_1/imports/synth_1/ad7606_drive.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/utils_1/imports/synth_1/ad7606_drive.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ad7606_drive -part xc7z020clg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-2
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17432
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1240.926 ; gain = 494.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ad7606_drive' [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/sources_1/new/ad7606_drive.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/sources_1/new/ad7606_drive.v:247]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/sources_1/new/ad7606_drive.v:265]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.runs/synth_1/.Xil/Vivado-400-CCC/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (0#1) [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.runs/synth_1/.Xil/Vivado-400-CCC/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ad7606_drive' (0#1) [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/sources_1/new/ad7606_drive.v:23]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ila'. This will prevent further optimization [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/sources_1/new/ad7606_drive.v:265]
+WARNING: [Synth 8-6014] Unused sequential element data_reg was removed.  [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/sources_1/new/ad7606_drive.v:243]
+WARNING: [Synth 8-6014] Unused sequential element data_vld_reg was removed.  [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/sources_1/new/ad7606_drive.v:244]
+WARNING: [Synth 8-7129] Port frstdata in module ad7606_drive is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1352.699 ; gain = 606.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1352.699 ; gain = 606.754
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1352.699 ; gain = 606.754
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1352.699 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Programs/FPGA/ZYNQ/AD7606/AD7606.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila'
+Finished Parsing XDC File [d:/Programs/FPGA/ZYNQ/AD7606/AD7606.gen/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila'
+Parsing XDC File [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc]
+WARNING: [Vivado 12-584] No ports matched 'data[15]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'data[14]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:18]
+WARNING: [Vivado 12-584] No ports matched 'data[13]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'data[12]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'data[11]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'data[10]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'data[9]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'data[8]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'data[7]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'data[6]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'data[5]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:27]
+WARNING: [Vivado 12-584] No ports matched 'data[4]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'data[3]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'data[2]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'data[1]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'data[0]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'data_vld[7]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'data_vld[6]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'data_vld[5]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'data_vld[4]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'data_vld[3]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'data_vld[2]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'data_vld[1]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'data_vld[0]'. [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc:40]
+Finished Parsing XDC File [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ad7606_drive_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Programs/FPGA/ZYNQ/AD7606/AD7606.srcs/constrs_1/new/111.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ad7606_drive_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ad7606_drive_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1443.113 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1443.113 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1443.113 ; gain = 697.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1443.113 ; gain = 697.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 1443.113 ; gain = 697.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_c_reg' in module 'ad7606_drive'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    IDLE |                            00001 |                            00001
+                     CON |                            00010 |                            00010
+                    BUSY |                            00100 |                            00100
+                    DATA |                            01000 |                            01000
+                     RST |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'state_c_reg' in module 'ad7606_drive'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1443.113 ; gain = 697.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 4     
+	   4 Input   16 Bit        Muxes := 4     
+	   2 Input    8 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 3     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port frstdata in module ad7606_drive is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1443.113 ; gain = 697.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1567.301 ; gain = 821.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1567.375 ; gain = 821.430
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 1595.957 ; gain = 850.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1811.715 ; gain = 1065.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1811.715 ; gain = 1065.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1811.715 ; gain = 1065.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1811.715 ; gain = 1065.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1811.715 ; gain = 1065.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1811.715 ; gain = 1065.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ila_0         |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |ila    |     1|
+|2     |BUFG   |     1|
+|3     |CARRY4 |     3|
+|4     |LUT1   |     1|
+|5     |LUT2   |     6|
+|6     |LUT3   |    13|
+|7     |LUT4   |     8|
+|8     |LUT5   |    14|
+|9     |LUT6   |    81|
+|10    |FDCE   |    22|
+|11    |FDPE   |     2|
+|12    |FDRE   |    74|
+|13    |IBUF   |    19|
+|14    |OBUF   |     4|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1811.715 ; gain = 1065.770
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1811.715 ; gain = 975.355
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 1811.715 ; gain = 1065.770
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1820.828 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1824.520 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 64883ad
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 31 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:01:07 . Memory (MB): peak = 1824.520 ; gain = 1301.281
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1824.520 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Programs/FPGA/ZYNQ/AD7606/AD7606.runs/synth_1/ad7606_drive.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ad7606_drive_utilization_synth.rpt -pb ad7606_drive_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 12 10:44:32 2025...

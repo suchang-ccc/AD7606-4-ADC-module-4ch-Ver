@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Sun Nov 30 19:09:36 2025
+# Process ID         : 10564
+# Current directory  : D:/Programs/FPGA/ZYNQ/AD7606/AD7606.runs/ila_0_synth_1
+# Command line       : vivado.exe -log ila_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_0.tcl
+# Log file           : D:/Programs/FPGA/ZYNQ/AD7606/AD7606.runs/ila_0_synth_1/ila_0.vds
+# Journal file       : D:/Programs/FPGA/ZYNQ/AD7606/AD7606.runs/ila_0_synth_1\vivado.jou
+# Running On         : CCC
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i5-13500H
+# CPU Frequency      : 3187 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16802 MB
+# Swap memory        : 7784 MB
+# Total Virtual      : 24587 MB
+# Available Virtual  : 13692 MB
+#-----------------------------------------------------------
+source ila_0.tcl -notrace
